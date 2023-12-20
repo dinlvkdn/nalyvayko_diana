@@ -71,8 +71,10 @@ for i in range(num_rows * num_cols):
     confidence = np.max(predictions[i])
 
     plt.title(f'Цифра: {true_label}\nПрогнозована цифра: {predicted_label}\nЙмовірність: {(confidence * 100):.1f}%')
+    plt.title('New title')
 
     plt.axis('off')
 
 plt.tight_layout()
 plt.show()
+
